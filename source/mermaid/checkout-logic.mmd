@@ -1,0 +1,13 @@
+flowchart TD
+    A([User Clicks Checkout]) --> B{Check Inventory}
+    B -- Item OOS --> C[Return Error 409]
+    B -- Stock Good --> D[Lock Items]
+    D --> E{Charge Credit Card}
+    E -- Failure --> F[Release Stock Lock]
+    F --> G[Return Error 402]
+    E -- Success --> H[Create Order Record]
+    H --> I([Return 200 OK])
+
+    style C fill:#f9f,stroke:#333,stroke-width:2px
+    style G fill:#f9f,stroke:#333,stroke-width:2px
+    style I fill:#bbf,stroke:#333,stroke-width:2px

@@ -1,0 +1,11 @@
+When a user clicks checkout, first validate the cart inventory.
+
+If any item is OOS (Out of Stock), return error 409.
+
+If stock is good, lock the items.
+
+Then try to charge the credit card.
+
+If payment fails, release the stock lock and return error 402.
+
+If payment works, create the order record and send a 200 OK.

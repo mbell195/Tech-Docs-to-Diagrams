@@ -1,0 +1,29 @@
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+_site/
+build/
+dist/
+
+.env
+.env.local
+
+# Do not ignore generated diagrams!
+# assets/diagrams-generated/

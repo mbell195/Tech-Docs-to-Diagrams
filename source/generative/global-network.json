@@ -1,0 +1,8 @@
+{
+  "title": "Global Network Overview",
+  "engine": "Gemini 3 Pro (Nano Banana)",
+  "date_created": "2025-11-22",
+  "prompt": "Create a high-fidelity 3D illustration of a global e-commerce network. In the center, a glowing globe with data streams flying out to smartphones and laptops. The style should be 'Corporate Memphis' but with a dark mode aesthetic. Neon blue and purple color palette. No text.",
+  "modifiers": ["3D render", "Dark Mode", "Neon"],
+  "edit_history": ["v1: Generated base image"]
+}

@@ -1,0 +1,8 @@
+{
+  "title": "Checkout Flow - Whiteboard Style",
+  "source_logic": "source/mermaid/checkout-logic.mmd",
+  "output_image": "assets/diagrams-generated/checkout-whiteboard.png",
+  "engine": "Gemini 3 Pro (Nano Banana)",
+  "style_prompt": "Render as a 'Hand-drawn Whiteboard' style diagram. Background: off-white texture. Lines: Thick black marker. Decisions: Highlighted yellow. Maintain strict logic.",
+  "date_generated": "2025-11-22"
+}

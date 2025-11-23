@@ -1,0 +1,36 @@
+name: Render Mermaid Diagrams
+
+on:
+  push:
+    paths:
+      - 'source/mermaid/*.mmd'
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v3
+
+      - name: Compile Mermaid to SVG
+        uses: mermaid-js/mermaid-cli-action@v2
+        with:
+          input: 'source/mermaid'
+          output: 'assets/diagrams-generated'
+          output-format: 'svg'
+
+      - name: Compile Mermaid to PNG
+        uses: mermaid-js/mermaid-cli-action@v2
+        with:
+          input: 'source/mermaid'
+          output: 'assets/diagrams-generated'
+          output-format: 'png'
+
+      - name: Commit Rendered Diagrams
+        run: |
+          git config --global user.name 'Docs-Bot'
+          git config --global user.email 'bot@noreply.github.com'
+          git add assets/diagrams-generated/
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-render diagrams (SVG & PNG) [skip ci]" && git push)
