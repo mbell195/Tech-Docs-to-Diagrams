@@ -1,8 +1,8 @@
-# Hybrid Documentation: Precision & Visuals
+# AI-Powered Technical Documentation to Image Generator
 
-**Maintained by:** Marc Bell
+**Created and maintained by:** Marc Bell
 
-Accelerates technical documentation by automatically generating Mermaid diagrams directly from written drafts using OpenAI or Google Gemini. Users can manually fine-tune the code via a visual editor for engineering precision, then apply DALL-E 3 or Imagen 3 to instantly beautify the diagram flows. This hybrid approach combines the reliability of version-controlled data with the aesthetic quality of professional design tools, all within an automated GitHub workflow.
+Automatically generates Mermaid diagrams from written drafts using OpenAI GPT-4o or Google Gemini. Fine-tune diagrams with precision using a visual editor, then beautify them with DALL-E 3 or Imagen 3 AI. This hybrid workflow combines version-controlled code with professional design aesthetics, fully automated via GitHub Actions.
 
 ## 📂 Project Structure
 
